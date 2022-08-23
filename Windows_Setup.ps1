@@ -79,6 +79,7 @@ winget install KhronosGroup.VulkanSDK
 winget install GitHub.GitHubDesktop
 winget install GitHub.GitLFS
 winget install Git.Git
+winget install PuTTY.PuTTY
 choco install ghidra -y
 
 # Office Applications #
