@@ -81,7 +81,7 @@ winget install Git.Git
 choco install ghidra -y
 
 # Office Applications #
-winget install TheDocumentFoundation.LibreOffice
+winget install ONLYOFFICE.DesktopEditors
 
 # Third Party Drivers #
 choco install ds4windows -y
