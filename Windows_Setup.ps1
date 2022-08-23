@@ -29,6 +29,7 @@ winget install KDE.Kdenlive
 winget install KDE.Krita
 winget install Autodesk.DesktopApp
 winget install Wacom.WacomTabletDriver
+winget install BlenderFoundation.Blender
 # Add Affinity Photo Here.
 choco install clipstudio-paint clipstudio-modeler -y
 
