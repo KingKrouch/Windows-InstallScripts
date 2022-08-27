@@ -88,5 +88,8 @@ winget install ONLYOFFICE.DesktopEditors
 # Third Party Drivers #
 choco install ds4windows -y
 
+# HidHide, for Razer's shitty software that still insists on installing an Xbox 360 gamepad driver and screwing up everything more than SteamInput ever did #
+winget install ViGEm.HidHide
+
 # Finally update everything to be double sure. #
 winget upgrade --all
