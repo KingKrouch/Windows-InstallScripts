@@ -40,6 +40,7 @@ winget install OBSProject.OBSStudio
 # Desktop Tweaks #
 winget install valinet.ExplorerPatcher
 winget install Microsoft.PowerToys
+winget install ModernFlyouts.ModernFlyouts
 
 # File Software #
 winget install RARLab.WinRAR
