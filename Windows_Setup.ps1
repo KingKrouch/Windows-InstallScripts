@@ -67,7 +67,7 @@ winget install UnityTechnologies.UnityHub
 winget install EpicGames.EpicGamesLauncher
 winget install JanDeDobbeleer.OhMyPosh # Need to automate setting up the Powershell profile, since it does have some problems working on it's own.
 Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux # You still need to go about installing the WSL 2 Kernel.
-winget install Canonical.Ubuntu # I do plan on replacing this with a Fedora base later on, since it's not hard to configure with WSL.
+winget install whitewaterfoundry.fedora-remix-for-wsl
 winget install Paragon.LinuxFileSystems # This is for EXT4 file systems. Wish WinBTRFS wasn't BSOD bait, as I'd otherwise be using those filesystems.
 winget install Docker.DockerDesktop
 winget install BaldurKarlsson.RenderDoc
