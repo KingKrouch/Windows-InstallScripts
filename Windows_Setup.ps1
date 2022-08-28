@@ -88,6 +88,9 @@ winget install ONLYOFFICE.DesktopEditors
 
 # Third Party Drivers #
 choco install ds4windows -y
+winget install Corsair.iCUE.4
+winget install Logitech.GHUB
+choco install razer-synapse-3 -y
 
 # HidHide, for Razer's shitty software that still insists on installing an Xbox 360 gamepad driver and screwing up everything more than SteamInput ever did #
 winget install ViGEm.HidHide
