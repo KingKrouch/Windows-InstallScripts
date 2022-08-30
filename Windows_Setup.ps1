@@ -21,7 +21,7 @@ winget install Discord.Discord
 winget install CiderCollective.Cider
 winget install MullvadVPN.MullvadVPN
 winget install KDE.KDEConnect
-winget install VideoLAN.VLC
+winget install clsid2.mpc-hc
 winget install qBittorrent.qBittorrent
 
 # Creative Stuff #
