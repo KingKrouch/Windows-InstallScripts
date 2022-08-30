@@ -22,6 +22,7 @@ winget install CiderCollective.Cider
 winget install MullvadVPN.MullvadVPN
 winget install KDE.KDEConnect
 winget install clsid2.mpc-hc
+winget install CodecGuide.K-LiteCodecPack.Mega
 winget install qBittorrent.qBittorrent
 
 # Creative Stuff #
