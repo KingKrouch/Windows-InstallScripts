@@ -83,6 +83,7 @@ winget install GitHub.GitLFS
 winget install Git.Git
 winget install PuTTY.PuTTY
 winget install WerWolv.ImHex
+winget install TimKosse.FileZilla.Client
 choco install ghidra -y
 
 # Office Applications #
