@@ -89,6 +89,7 @@ choco install ghidra -y
 
 # Office Applications #
 winget install ONLYOFFICE.DesktopEditors
+winget install JGraph.Draw
 
 # Third Party Drivers #
 choco install ds4windows -y
