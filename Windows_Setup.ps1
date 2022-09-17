@@ -42,6 +42,8 @@ winget install OBSProject.OBSStudio
 # Desktop Tweaks #
 winget install valinet.ExplorerPatcher
 winget install Microsoft.PowerToys
+winget install 9P1741LKHQS9
+winget install Microsoft.PowerAutomateDesktop
 winget install ModernFlyouts.ModernFlyouts
 
 # File Software #
