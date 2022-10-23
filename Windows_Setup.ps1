@@ -12,8 +12,9 @@ scoop install winfetch
 
 # Game Clients #
 winget install Valve.Steam --location C:\Steam
-winget install HeroicGamesLauncher.HeroicGamesLauncher
-winget install PolyMC.PolyMC
+winget install EpicGames.EpicGamesLauncher
+winget install GOG.Galaxy
+winget install PrismLauncher.PrismLauncher
 
 # Web and Multimedia #
 winget install Mozilla.Firefox
@@ -70,14 +71,16 @@ winget install Microsoft.DirectX
 winget install UnityTechnologies.UnityHub
 winget install EpicGames.EpicGamesLauncher
 winget install JanDeDobbeleer.OhMyPosh # Need to automate setting up the Powershell profile, since it does have some problems working on it's own.
-Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux # You still need to go about installing the WSL 2 Kernel.
+dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
+dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart # You still need to go about installing the WSL 2 Kernel.
 winget install whitewaterfoundry.fedora-remix-for-wsl
 winget install Paragon.LinuxFileSystems # This is for EXT4 file systems. Wish WinBTRFS wasn't BSOD bait, as I'd otherwise be using those filesystems.
 winget install Docker.DockerDesktop
 winget install BaldurKarlsson.RenderDoc
 winget install Jetbrains.Rider
 winget install Jetbrains.CLion
-winget install Jetbrains.PyCharm.Community
+winget install Jetbrains.PyCharm.Professional
+winget install JetBrains.IntelliJIDEA.Ultimate
 winget install Microsoft.VisualStudio.2022.Community
 winget install Microsoft.VisualStudioCode
 winget install KhronosGroup.VulkanSDK
@@ -87,6 +90,7 @@ winget install Git.Git
 winget install PuTTY.PuTTY
 winget install WerWolv.ImHex
 winget install TimKosse.FileZilla.Client
+winget install EclipseAdoptium.Temurin.11.JDK
 choco install ghidra -y
 
 # Office Applications #
@@ -94,12 +98,12 @@ winget install ONLYOFFICE.DesktopEditors
 winget install JGraph.Draw
 
 # Third Party Drivers #
-choco install ds4windows -y
 winget install Corsair.iCUE.4
 winget install Logitech.GHUB
 choco install razer-synapse-3 -y
 
-# HidHide, for Razer's shitty software that still insists on installing an Xbox 360 gamepad driver and screwing up everything more than SteamInput ever did #
+# HidHide, for Razer's shitty software that still insists on installing an Xbox 360 gamepad driver and screwing up everything more than SteamInput ever did. Also ViGEmBus, so DualSenseX just works without installs needed #
+winget install ViGEm.ViGEmBus
 winget install ViGEm.HidHide
 
 # Finally update everything to be double sure. #
