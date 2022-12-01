@@ -15,6 +15,8 @@ winget install Valve.Steam --location C:\Steam
 winget install EpicGames.EpicGamesLauncher
 winget install GOG.Galaxy
 winget install PrismLauncher.PrismLauncher
+# UWPHook for adding Microsoft Store stuff to Steam
+winget install brianlima.uwphook
 
 # Web and Multimedia #
 winget install Mozilla.Firefox
