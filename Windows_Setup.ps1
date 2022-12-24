@@ -12,11 +12,13 @@ scoop install winfetch
 
 # Game Clients #
 winget install Valve.Steam --location C:\Steam
-winget install EpicGames.EpicGamesLauncher
-winget install GOG.Galaxy
+winget install HeroicGamesLauncher.HeroicGamesLauncher
+winget install ItchIo.Itch
 winget install PrismLauncher.PrismLauncher
 # UWPHook for adding Microsoft Store stuff to Steam
 winget install brianlima.uwphook
+# Streaming Client for Games
+winget install LizardByte.Sunshine
 
 # Web and Multimedia #
 winget install Mozilla.Firefox
@@ -55,18 +57,18 @@ winget install WinDirStat.WinDirStat
 choco install linkshellextension -y
 
 # Redistributables #
-winget install Microsoft.VC++2015-2022Redist-x86
-winget install Microsoft.VC++2015-2022Redist-x64
-winget install Microsoft.VC++2013Redist-x86
-winget install Microsoft.VC++2013Redist-x64
-winget install Microsoft.VC++2012Redist-x86
-winget install Microsoft.VC++2012Redist-x64
-winget install Microsoft.VC++2010Redist-x86
-winget install Microsoft.VC++2010Redist-x64
-winget install Microsoft.VC++2008Redist-x86
-winget install Microsoft.VC++2008Redist-x64
-winget install Microsoft.VC++2005Redist-x86
-winget install Microsoft.VC++2005Redist-x64
+winget install Microsoft.VCRedist.2005.x86
+winget install Microsoft.VCRedist.2005.x64
+winget install Microsoft.VCRedist.2008.x86
+winget install Microsoft.VCRedist.2008.x64
+winget install Microsoft.VCRedist.2010.x86
+winget install Microsoft.VCRedist.2010.x64
+winget install Microsoft.VCRedist.2012.x86
+winget install Microsoft.VCRedist.2012.x64
+winget install Microsoft.VCRedist.2013.x86
+winget install Microsoft.VCRedist.2013.x64
+winget install Microsoft.VCRedist.2015+.x86
+winget install Microsoft.VCRedist.2015+.x64
 winget install Microsoft.DirectX
 
 # Development Packages #
@@ -79,16 +81,13 @@ winget install whitewaterfoundry.fedora-remix-for-wsl
 winget install Paragon.LinuxFileSystems # This is for EXT4 file systems. Wish WinBTRFS wasn't BSOD bait, as I'd otherwise be using those filesystems.
 winget install Docker.DockerDesktop
 winget install BaldurKarlsson.RenderDoc
-winget install Jetbrains.Rider
-winget install Jetbrains.CLion
-winget install Jetbrains.PyCharm.Professional
-winget install JetBrains.IntelliJIDEA.Ultimate
+winget install JetBrains.Toolbox
 winget install Microsoft.VisualStudio.2022.Community
 winget install Microsoft.VisualStudioCode
 winget install KhronosGroup.VulkanSDK
-winget install GitHub.GitHubDesktop
-winget install GitHub.GitLFS
 winget install Git.Git
+winget install GitHub.GitLFS
+winget install GitHub.GitHubDesktop
 winget install PuTTY.PuTTY
 winget install WerWolv.ImHex
 winget install TimKosse.FileZilla.Client
