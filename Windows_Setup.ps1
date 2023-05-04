@@ -47,15 +47,17 @@ choco install clipstudio-paint clipstudio-modeler -y
 winget install OBSProject.OBSStudio
 
 # Desktop Tweaks #
-winget install valinet.ExplorerPatcher
 winget install Microsoft.PowerToys
 winget install 9P1741LKHQS9
 winget install Microsoft.PowerAutomateDesktop
 winget install ModernFlyouts.ModernFlyouts
+winget install startallback
 
 # File Software #
 winget install RARLab.WinRAR
 winget install WinDirStat.WinDirStat
+winget install voidtools.Everything
+winget install stnkl.EverythingToolbar
 choco install linkshellextension -y
 
 # Redistributables #
