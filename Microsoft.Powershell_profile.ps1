@@ -5,4 +5,4 @@ if (Test-Path($ChocolateyProfile)) {
   Import-Module "$ChocolateyProfile"
 }
 clear
-winfetch
+fastfetch
