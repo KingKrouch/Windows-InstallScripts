@@ -19,6 +19,8 @@ winget install ElectronicArts.EADesktop
 winget install Ubisoft.Connect
 # UWPHook for adding Microsoft Store stuff to Steam
 winget install brianlima.uwphook
+# Special K (Swiss Army Knife for PC Gaming)
+winget install SpecialK.SpecialK
 # Streaming Client for Games
 winget install LizardByte.Sunshine
 
