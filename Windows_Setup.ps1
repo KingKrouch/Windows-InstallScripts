@@ -7,28 +7,33 @@ Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManage
 # Install Scoop
 iex (new-object net.webclient).downloadstring('https://get.scoop.sh')
 
-# Install Winfetch (through Scoop)
-scoop install winfetch
+# Install Fastfetch (through Scoop)
+scoop install fastfetch
 
 # Game Clients #
 winget install Valve.Steam --location C:\Steam
 winget install HeroicGamesLauncher.HeroicGamesLauncher
 winget install ItchIo.Itch
 winget install PrismLauncher.PrismLauncher
+winget install ElectronicArts.EADesktop
+winget install Ubisoft.Connect
 # UWPHook for adding Microsoft Store stuff to Steam
 winget install brianlima.uwphook
 # Streaming Client for Games
 winget install LizardByte.Sunshine
 
 # Web and Multimedia #
-winget install Mozilla.Firefox
+winget install 9NVN9SZ8KFD7 # Librewolf
 winget install Discord.Discord
-winget install CiderCollective.Cider
+winget install Spotify.Spotify
 winget install MullvadVPN.MullvadVPN
 winget install KDE.KDEConnect
 winget install clsid2.mpc-hc
-winget install 9N64SQZTB3LM
+winget install 9N64SQZTB3LM # MPV.net
 winget install CodecGuide.K-LiteCodecPack.Mega
+winget install Apple.iTunes
+winget install AndreWiethoff.ExactAudioCopy
+winget install PeterPawlowski.foobar2000
 winget install qBittorrent.qBittorrent
 winget install Twilio.Authy
 winget install Bitwarden.Bitwarden
@@ -48,14 +53,13 @@ winget install OBSProject.OBSStudio
 
 # Desktop Tweaks #
 winget install Microsoft.PowerToys
-winget install 9P1741LKHQS9
 winget install Microsoft.PowerAutomateDesktop
 winget install ModernFlyouts.ModernFlyouts
 winget install startallback
 
 # File Software #
 winget install RARLab.WinRAR
-winget install WinDirStat.WinDirStat
+winget install AntibodySoftware.WizTree
 winget install voidtools.Everything
 winget install stnkl.EverythingToolbar
 choco install linkshellextension -y
@@ -95,7 +99,7 @@ winget install GitHub.GitHubDesktop
 winget install PuTTY.PuTTY
 winget install WerWolv.ImHex
 winget install TimKosse.FileZilla.Client
-winget install EclipseAdoptium.Temurin.11.JDK
+winget install EclipseAdoptium.Temurin.20.JDK
 choco install ghidra -y
 
 # Office Applications #
