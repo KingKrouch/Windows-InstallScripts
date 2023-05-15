@@ -113,8 +113,7 @@ winget install ONLYOFFICE.DesktopEditors
 winget install JGraph.Draw
 
 # Third Party Drivers #
-winget install Corsair.iCUE.4
-winget install Logitech.GHUB
+choco install openrgb -y
 choco install razer-synapse-3 -y
 
 # HidHide, for Razer's shitty software that still insists on installing an Xbox 360 gamepad driver and screwing up everything more than SteamInput ever did. Also ViGEmBus, so DualSenseX just works without installs needed #
