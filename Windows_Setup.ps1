@@ -100,6 +100,7 @@ winget install PuTTY.PuTTY
 winget install WerWolv.ImHex
 winget install TimKosse.FileZilla.Client
 winget install EclipseAdoptium.Temurin.20.JDK
+winget install EclipseAdoptium.Temurin.17.JDK
 choco install ghidra -y
 
 # Set up WSL2 Kernel for Docker
