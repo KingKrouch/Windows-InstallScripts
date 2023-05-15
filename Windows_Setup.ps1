@@ -102,6 +102,12 @@ winget install TimKosse.FileZilla.Client
 winget install EclipseAdoptium.Temurin.20.JDK
 choco install ghidra -y
 
+# Set up WSL2 Kernel for Docker
+wget -o wsl_update_x64.msi https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi
+./wsl_update_x64.msi
+rm wsl_update_x64.msi
+wsl --set-default-version 2
+
 # Office Applications #
 winget install ONLYOFFICE.DesktopEditors
 winget install JGraph.Draw
