@@ -82,7 +82,7 @@ winget install Microsoft.VCRedist.2015+.x64
 winget install Microsoft.DirectX
 
 # Development Packages #
-winget install UnityTechnologies.UnityHub
+winget install Unity.UnityHub
 winget install EpicGames.EpicGamesLauncher
 winget install JanDeDobbeleer.OhMyPosh # Need to automate setting up the Powershell profile, since it does have some problems working on it's own.
 dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
