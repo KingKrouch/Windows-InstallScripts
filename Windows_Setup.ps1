@@ -61,6 +61,7 @@ winget install startallback
 
 # File Software #
 winget install RARLab.WinRAR
+winget install 7zip.7zip
 winget install AntibodySoftware.WizTree
 winget install voidtools.Everything
 winget install stnkl.EverythingToolbar
