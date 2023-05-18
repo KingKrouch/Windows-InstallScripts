@@ -127,3 +127,7 @@ winget install ViGEm.HidHide
 
 # Finally update everything to be double sure. #
 winget upgrade --all
+
+# Set up DirectPlay support and Hyper-V Virtual Machine services.
+Enable-WindowsOptionalFeature -Online -FeatureName LegacyComponents  -All -NoRestart # Set up DirectPlay and some legacy components for older PC games.
+Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Hyper-V -All -NoRestart
