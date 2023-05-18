@@ -125,11 +125,13 @@ choco install razer-synapse-3 -y
 winget install ViGEm.ViGEmBus
 winget install ViGEm.HidHide
 
-# Finally update everything to be double sure. #
-winget upgrade --all
-
 # Set up DirectPlay and some legacy components for older PC games.
 Enable-WindowsOptionalFeature -Online -FeatureName LegacyComponents -All -NoRestart
 Enable-WindowsOptionalFeature -Online -FeatureName DirectPlay -NoRestart
 # Set up Hyper-V Virtual Machine services.
 Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Hyper-V -All -NoRestart
+# Install VMWare Player
+winget install VMWare.WorkstationPlayer
+
+# Finally update everything to be double sure. #
+winget upgrade --all
