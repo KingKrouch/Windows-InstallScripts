@@ -65,7 +65,7 @@ winget install 7zip.7zip
 winget install AntibodySoftware.WizTree
 winget install voidtools.Everything
 winget install stnkl.EverythingToolbar
-choco install linkshellextension -y
+winget install HermannSchinagl.LinkShellExtension
 
 # Redistributables #
 winget install Microsoft.VCRedist.2005.x86
