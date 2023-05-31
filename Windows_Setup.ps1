@@ -107,6 +107,9 @@ winget install EclipseAdoptium.Temurin.20.JDK
 winget install EclipseAdoptium.Temurin.17.JDK
 choco install ghidra -y
 
+# Install Barrier for cross-device input management
+winget install DebaucheeOpenSourceGroup.Barrier
+
 # Set up WSL2 Kernel for Docker
 wget -o wsl_update_x64.msi https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi
 ./wsl_update_x64.msi
