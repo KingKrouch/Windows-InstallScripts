@@ -66,6 +66,7 @@ winget install AntibodySoftware.WizTree
 winget install voidtools.Everything
 winget install stnkl.EverythingToolbar
 winget install HermannSchinagl.LinkShellExtension
+winget install BotProductions.IconViewer
 
 # Redistributables #
 winget install Microsoft.VCRedist.2005.x86
