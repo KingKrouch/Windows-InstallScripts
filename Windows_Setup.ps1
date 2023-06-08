@@ -107,6 +107,7 @@ winget install TimKosse.FileZilla.Client
 winget install EclipseAdoptium.Temurin.20.JDK
 winget install EclipseAdoptium.Temurin.17.JDK
 winget install MongoDB.Server
+winget install Telerik.Fiddler.Classic
 choco install ghidra -y
 
 # Install Barrier for cross-device input management
