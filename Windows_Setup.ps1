@@ -97,6 +97,7 @@ winget install JetBrains.Toolbox
 winget install Microsoft.VisualStudio.2022.Community
 winget install Microsoft.VisualStudioCode
 winget install KhronosGroup.VulkanSDK
+winget install MSYS2.MSYS2
 winget install Python.Python.3.10 # Needs to be this version at the moment to have Torch-DirectML support for Stable Diffusion.
 winget install Git.Git
 winget install GitHub.GitLFS
