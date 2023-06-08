@@ -6,6 +6,7 @@ Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManage
 
 # Install Scoop
 iex (new-object net.webclient).downloadstring('https://get.scoop.sh')
+scoop bucket add extras
 
 # Install Fastfetch (through Scoop)
 scoop install fastfetch
@@ -58,6 +59,7 @@ winget install Microsoft.PowerToys
 winget install Microsoft.PowerAutomateDesktop
 winget install ModernFlyouts.ModernFlyouts
 winget install startallback
+scoop install secureuxtheme
 
 # File Software #
 winget install RARLab.WinRAR
