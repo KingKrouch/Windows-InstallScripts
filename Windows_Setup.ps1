@@ -51,6 +51,7 @@ winget install KDE.Krita
 winget install Autodesk.DesktopApp
 winget install Wacom.WacomTabletDriver
 winget install BlenderFoundation.Blender
+winget install Audacity.Audacity
 # Add Affinity Photo Here.
 choco install clipstudio-paint clipstudio-modeler -y
 
@@ -118,6 +119,10 @@ winget install EclipseAdoptium.Temurin.17.JDK
 winget install MongoDB.Server
 winget install Telerik.Fiddler.Classic
 choco install ghidra -y
+
+# Source Engine Modding Stuff
+winget install RyanGregg.GCFScape
+winget install RyanGregg.VTFEdit
 
 # Install Barrier for cross-device input management
 winget install DebaucheeOpenSourceGroup.Barrier
