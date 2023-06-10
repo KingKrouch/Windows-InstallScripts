@@ -25,6 +25,8 @@ winget install brianlima.uwphook
 winget install SpecialK.SpecialK
 # Streaming Client for Games
 winget install LizardByte.Sunshine
+# MSI Afterburner
+scoop install msiafterburner
 
 # Web and Multimedia #
 winget install 9NVN9SZ8KFD7 # Librewolf
