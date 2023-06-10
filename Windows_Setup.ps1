@@ -108,6 +108,8 @@ winget install MSYS2.MSYS2
 winget install Python.Python.3.10 # Needs to be this version at the moment to have Torch-DirectML support for Stable Diffusion.
 winget install GitHub.GitLFS
 winget install GitHub.GitHubDesktop
+winget install Kitware.CMake
+winget install mesonbuild.meson
 winget install PuTTY.PuTTY
 winget install WerWolv.ImHex
 winget install TimKosse.FileZilla.Client
