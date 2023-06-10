@@ -25,6 +25,7 @@ winget install brianlima.uwphook
 winget install SpecialK.SpecialK
 # Streaming Client for Games
 winget install LizardByte.Sunshine
+winget install MoonlightGameStreamingProject.Moonlight
 # MSI Afterburner
 scoop install msiafterburner
 
