@@ -92,6 +92,7 @@ winget install EpicGames.EpicGamesLauncher
 winget install JanDeDobbeleer.OhMyPosh # Need to automate setting up the Powershell profile, since it does have some problems working on it's own.
 dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
 dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart # You still need to go about installing the WSL 2 Kernel.
+winget install 9PDXGNCFSCZV # Ubuntu
 winget install whitewaterfoundry.fedora-remix-for-wsl
 winget install Paragon.LinuxFileSystems # This is for EXT4 file systems. Wish WinBTRFS wasn't BSOD bait, as I'd otherwise be using those filesystems.
 winget install Docker.DockerDesktop
