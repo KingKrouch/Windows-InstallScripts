@@ -6,6 +6,7 @@ Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManage
 
 # Install Scoop
 iex (new-object net.webclient).downloadstring('https://get.scoop.sh')
+winget install Git.Git # Set up Git, as we will need that prior to setting up the extras scoop bucket.
 scoop bucket add extras
 
 # Install Fastfetch (through Scoop)
@@ -101,7 +102,6 @@ winget install Microsoft.VisualStudioCode
 winget install KhronosGroup.VulkanSDK
 winget install MSYS2.MSYS2
 winget install Python.Python.3.10 # Needs to be this version at the moment to have Torch-DirectML support for Stable Diffusion.
-winget install Git.Git
 winget install GitHub.GitLFS
 winget install GitHub.GitHubDesktop
 winget install PuTTY.PuTTY
@@ -127,7 +127,7 @@ winget install ONLYOFFICE.DesktopEditors
 winget install JGraph.Draw
 
 # Third Party Drivers #
-choco install openrgb -y
+scoop install openrgb
 choco install razer-synapse-3 -y
 
 # HidHide, for Razer's shitty software that still insists on installing an Xbox 360 gamepad driver and screwing up everything more than SteamInput ever did. Also ViGEmBus, so DualSenseX just works without installs needed #
