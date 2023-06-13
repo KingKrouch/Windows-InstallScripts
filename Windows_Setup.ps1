@@ -121,6 +121,12 @@ winget install MongoDB.Server
 winget install Telerik.Fiddler.Classic
 choco install ghidra -y
 
+# Create shortcut for Godot (Mono)
+$WshShell = New-Object -comObject WScript.Shell
+$Shortcut = $WshShell.CreateShortcut("$env:APPDATA\Microsoft\Windows\Start Menu\Programs\Godot.lnk")
+$Shortcut.TargetPath = "$env:LOCALAPPDATA\Microsoft\WinGet\Packages\GodotEngine.GodotEngine.Mono_Microsoft.Winget.Source_8wekyb3d8bbwe\Godot_v4.0.3-stable_mono_win64\Godot_v4.0.3-stable_mono_win64.exe"
+$Shortcut.Save()
+
 # Source Engine Modding Stuff
 winget install RyanGregg.GCFScape
 winget install RyanGregg.VTFEdit
