@@ -93,6 +93,7 @@ winget install Microsoft.DirectX
 # Development Packages #
 winget install Unity.UnityHub
 winget install EpicGames.EpicGamesLauncher
+winget install GodotEngine.GodotEngine.Mono
 winget install JanDeDobbeleer.OhMyPosh # Need to automate setting up the Powershell profile, since it does have some problems working on it's own.
 dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
 dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart # You still need to go about installing the WSL 2 Kernel.
