@@ -121,6 +121,8 @@ winget install EclipseAdoptium.Temurin.20.JDK
 winget install EclipseAdoptium.Temurin.17.JDK
 winget install MongoDB.Server
 winget install Telerik.Fiddler.Classic
+winget install VirtualHere.USBClient
+winget install VirtualHere.USBServer
 choco install ghidra -y
 
 # Create shortcut for Godot (Mono)
