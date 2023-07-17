@@ -44,6 +44,9 @@ winget install PeterPawlowski.foobar2000
 winget install qBittorrent.qBittorrent
 winget install Twilio.Authy
 winget install Bitwarden.Bitwarden
+# Set up Spicetify
+iwr -useb https://raw.githubusercontent.com/spicetify/spicetify-cli/master/install.ps1 | iex
+iwr -useb https://raw.githubusercontent.com/spicetify/spicetify-marketplace/main/resources/install.ps1 | iex
 
 # Creative Stuff #
 winget install KDE.Kdenlive
