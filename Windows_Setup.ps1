@@ -153,6 +153,7 @@ winget install ONLYOFFICE.DesktopEditors
 winget install JGraph.Draw
 
 # Third Party Drivers #
+winget install Steelseries.GG
 scoop install openrgb
 choco install razer-synapse-3 -y
 
