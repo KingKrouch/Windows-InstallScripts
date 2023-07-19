@@ -67,6 +67,7 @@ winget install Microsoft.PowerToys
 winget install Microsoft.PowerAutomateDesktop
 winget install ModernFlyouts.ModernFlyouts
 winget install startallback
+winget install WinToys
 scoop install secureuxtheme
 
 # File Software #
