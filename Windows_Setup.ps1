@@ -27,6 +27,7 @@ winget install SpecialK.SpecialK
 winget install LizardByte.Sunshine
 winget install MoonlightGameStreamingProject.Moonlight
 # MSI Afterburner
+winget install Guru3D.RTSS
 scoop install msiafterburner
 
 # Web and Multimedia #
