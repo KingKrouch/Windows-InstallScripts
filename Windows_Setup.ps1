@@ -149,6 +149,9 @@ wget -o wsl_update_x64.msi https://wslstorestorage.blob.core.windows.net/wslblob
 rm wsl_update_x64.msi
 wsl --set-default-version 2
 
+# Set up some Windows Subsystem for Android stuff.
+winget install --id=infinitepower18.WSASideloader  -e
+
 # Office Applications #
 winget install ONLYOFFICE.DesktopEditors
 winget install JGraph.Draw
