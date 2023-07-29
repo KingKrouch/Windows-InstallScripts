@@ -62,6 +62,7 @@ choco install clipstudio-paint clipstudio-modeler -y
 # GPU Driver Stuff and Video Recording #
 # Need to add AMD Radeon Software here.
 winget install OBSProject.OBSStudio
+winget install Elgato.4KCaptureUtility
 
 # Desktop Tweaks #
 winget install Microsoft.PowerToys
