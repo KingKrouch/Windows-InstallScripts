@@ -31,7 +31,7 @@ winget install Guru3D.RTSS
 scoop install msiafterburner
 
 # Web and Multimedia #
-winget install 9NVN9SZ8KFD7 # Librewolf
+winget install VivaldiTechnologies.Vivaldi
 winget install Discord.Discord
 winget install Spotify.Spotify
 winget install MullvadVPN.MullvadVPN
