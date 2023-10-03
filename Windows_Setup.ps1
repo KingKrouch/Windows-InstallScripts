@@ -10,6 +10,7 @@ winget install Git.Git # Set up Git, as we will need that prior to setting up th
 scoop bucket add extras
 
 # Install Fastfetch (through Scoop)
+winget install 7zip.7zip # Set up 7-Zip, as we will need that before setting up fastfetch.
 scoop install fastfetch
 
 # Game Clients #
@@ -26,9 +27,6 @@ winget install SpecialK.SpecialK
 # Streaming Client for Games
 winget install LizardByte.Sunshine
 winget install MoonlightGameStreamingProject.Moonlight
-# MSI Afterburner
-winget install Guru3D.RTSS
-scoop install msiafterburner
 
 # Web and Multimedia #
 winget install VivaldiTechnologies.Vivaldi
@@ -74,7 +72,6 @@ scoop install secureuxtheme
 
 # File Software #
 winget install RARLab.WinRAR
-winget install 7zip.7zip
 winget install AntibodySoftware.WizTree
 winget install voidtools.Everything
 winget install stnkl.EverythingToolbar
