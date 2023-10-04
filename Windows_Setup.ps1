@@ -78,6 +78,10 @@ winget install stnkl.EverythingToolbar
 winget install HermannSchinagl.LinkShellExtension
 winget install BotProductions.IconViewer
 
+# System Software #
+winget install Henry++.MemReduct
+winget install BleachBit.BleachBit
+
 # Redistributables #
 winget install Microsoft.VCRedist.2005.x86
 winget install Microsoft.VCRedist.2005.x64
