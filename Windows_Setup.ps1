@@ -29,7 +29,7 @@ winget install LizardByte.Sunshine
 winget install MoonlightGameStreamingProject.Moonlight
 
 # Web and Multimedia #
-winget install VivaldiTechnologies.Vivaldi
+winget install Librewolf.Librewolf
 winget install Discord.Discord
 winget install Spotify.Spotify
 winget install MullvadVPN.MullvadVPN
