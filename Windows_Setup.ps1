@@ -77,6 +77,7 @@ winget install voidtools.Everything
 winget install stnkl.EverythingToolbar
 winget install HermannSchinagl.LinkShellExtension
 winget install BotProductions.IconViewer
+winget install LIGHTNINGUK.ImgBurn
 
 # System Software #
 winget install Henry++.MemReduct
