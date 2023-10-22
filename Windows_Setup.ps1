@@ -1,5 +1,5 @@
 #Requires -RunAsAdministrator
-
+## Software Installation
 # Install Chocolatey (May need to run the "choco install" comamnds again, make sure to run this script as admin) #
 Set-ExecutionPolicy -Scope CurrentUser Unrestricted
 Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
@@ -178,3 +178,38 @@ winget install VMWare.WorkstationPlayer
 
 # Finally update everything to be double sure. #
 winget upgrade --all
+
+
+## Settings Tweaks
+# Set up registry paths.
+$MouseSettingsPath = "HKCU:\Control Panel\Mouse"
+$ExplorerSettingsPath = "HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced"
+$DesktopSettingsPath = "HKCU:\Control Panel\Desktop"
+
+# Disable Mouse Acceleration.
+Set-ItemProperty -Path $MouseSettingsPath -Name MouseSpeed -Value 0
+Set-ItemProperty -Path $MouseSettingsPath -Name MouseThreshold1 -Value 0
+Set-ItemProperty -Path $MouseSettingsPath -Name MouseThreshold2 -Value 0
+
+# Disable Sticky Keys, Filter Keys, And Toggle Keys.
+Set-ItemProperty -Path "HKCU:\Control Panel\Accessibility\StickyKeys" -Name "Flags" -Value "26"
+Set-ItemProperty -Path "HKCU:\Control Panel\Accessibility\Keyboard Response" -Name "Flags" -Value "126"
+Set-ItemProperty -Path "HKCU:\Control Panel\Accessibility\ToggleKeys" -Name "Flags" -Value "58"
+
+# Show frequently used files and folders.
+Set-ItemProperty -Path $ExplorerSettingsPath -Name "Start_TrackProgs" -Value 0
+# Show file extensions for known file types.
+Set-ItemProperty -Path $ExplorerSettingsPath -Name "HideFileExt" -Value 0
+# Use check boxes to select items.
+Set-ItemProperty -Path $ExplorerSettingsPath -Name "AutoCheckSelect" -Value 1
+# Set Windows Explorer to open to "This PC" by default.
+Set-ItemProperty -Path $ExplorerSettingsPath -Name "LaunchTo" -Value 1 -Type DWORD
+# Disable desktop icons (I normally just pin the recycling bin to Explorer's Quick Access, and then disable the desktop icons because I don't want my wallpaper obscured by useless crap).
+Set-ItemProperty -Path $ExplorerSettingsPath -Name "HideIcons" -Value 1 -Type DWORD
+
+# Disable mouse shadows, amongst a few other things.
+Set-ItemProperty -Path $DesktopSettingsPath -Name "UserPreferencesMask" -Value ([byte[]] (9E, 1E, 03, 80, 12, 00, 00, 00)) -Type Binary
+# Set JPEG import quality for the desktop to 100%.
+Set-ItemProperty -Path $DesktopSettingsPath -Name "JPEGImportQuality" -Value 100 -Type DWORD
+
+# TODO: Add tweaks to automatically enable AutoHDR, Optimizations for Windowed Games, and Variable Refresh Rate.
