@@ -99,6 +99,7 @@ winget install Microsoft.VCRedist.2015+.x64
 winget install Microsoft.DirectX
 
 # Development Packages #
+winget install Intel.PresentMon.Beta
 winget install Unity.UnityHub
 winget install EpicGames.EpicGamesLauncher
 winget install GodotEngine.GodotEngine.Mono
