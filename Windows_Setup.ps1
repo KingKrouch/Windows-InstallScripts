@@ -36,6 +36,7 @@ winget install MullvadVPN.MullvadVPN
 winget install KDE.KDEConnect
 winget install clsid2.mpc-hc
 winget install yt-dlp.yt-dlp
+winget install Gyan.FFmpeg
 winget install 9N64SQZTB3LM # MPV.net
 winget install CodecGuide.K-LiteCodecPack.Mega
 winget install Apple.iTunes
