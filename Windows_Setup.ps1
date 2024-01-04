@@ -48,6 +48,9 @@ winget install Bitwarden.Bitwarden
 # Set up Spicetify
 iwr -useb https://raw.githubusercontent.com/spicetify/spicetify-cli/master/install.ps1 | iex
 iwr -useb https://raw.githubusercontent.com/spicetify/spicetify-marketplace/main/resources/install.ps1 | iex
+iwr -useb https://raw.githubusercontent.com/NYRI4/Comfy-spicetify/main/install.ps1 | iex # Make sure to set the color theme to "Spotify".
+spicetify config inject_css 1 replace_colors 1 overwrite_assets 1 inject_theme_js 1
+spicetify apply
 
 # Creative Stuff #
 winget install KDE.Kdenlive
