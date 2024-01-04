@@ -73,6 +73,7 @@ winget install Microsoft.PowerAutomateDesktop
 winget install ModernFlyouts.ModernFlyouts
 winget install startallback
 winget install WinToys
+winget install Rainmeter.Rainmeter
 scoop install secureuxtheme
 
 # File Software #
