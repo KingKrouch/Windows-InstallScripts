@@ -142,10 +142,37 @@ winget install VirtualHere.USBServer
 choco install ghidra -y
 
 # Create shortcut for Godot (Mono)
-$WshShell = New-Object -comObject WScript.Shell
-$Shortcut = $WshShell.CreateShortcut("$env:APPDATA\Microsoft\Windows\Start Menu\Programs\Godot.lnk")
-$Shortcut.TargetPath = "$env:LOCALAPPDATA\Microsoft\WinGet\Packages\GodotEngine.GodotEngine.Mono_Microsoft.Winget.Source_8wekyb3d8bbwe\Godot_v4.0.3-stable_mono_win64\Godot_v4.0.3-stable_mono_win64.exe"
-$Shortcut.Save()
+## Specify the directory path where you want to search
+$directoryPath = "$env:LOCALAPPDATA\Microsoft\WinGet\Packages\"
+## Specify the substring you're looking for
+$searchSubstring = "GodotEngine.Mono"
+## Use Get-ChildItem to search for folders with the specified substring
+$matchingFolders = Get-ChildItem -Path $directoryPath -Directory -Filter "*$searchSubstring*"
+
+## Check if any matching folders were found
+if ($matchingFolders.Count -gt 0) {
+    ## Take the first matching folder (you can modify this based on your needs)
+    $targetFolder = $matchingFolders[0].FullName
+    ## Check if there is a subfolder inside the matching folder
+    $subfolder = Get-ChildItem -Path $targetFolder -Directory | Select-Object -First 1
+
+    if ($subfolder) {
+        ## If a subfolder exists, use its name for the executable target
+        $executableTarget = $subfolder.Name
+	      $shortcutDisplayName = "Godot (.NET)"
+	      $WshShell = New-Object -comObject WScript.Shell
+ 	      $Shortcut = $WshShell.CreateShortcut("$env:APPDATA\Microsoft\Windows\Start Menu\Programs\$shortcutDisplayName.lnk")
+	      $Shortcut.TargetPath = Join-Path $targetFolder "$subfolder\$executableTarget.exe"
+    	  $Shortcut.Save()
+    }
+    else {
+        # If no subfolder exists, use a default name or modify as needed
+        Write-Host "No subfolder exists. Cannot create shortcut."
+    }
+}
+else {
+    Write-Host "No matching folders found."
+}
 
 # Source Engine Modding Stuff
 winget install RyanGregg.GCFScape
