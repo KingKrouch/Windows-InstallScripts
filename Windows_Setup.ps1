@@ -196,8 +196,8 @@ winget install JGraph.Draw
 
 # Third Party Drivers #
 winget install SteelSeries.GG
-scoop install openrgb
-choco install razer-synapse-3 -y
+winget install CalcProgrammer1.OpenRGB
+winget install RazerInc.RazerInstaller
 
 # HidHide, for Razer's shitty software that still insists on installing an Xbox 360 gamepad driver and screwing up everything more than SteamInput ever did. Also ViGEmBus, so DualSenseX just works without installs needed #
 winget install ViGEm.ViGEmBus
