@@ -189,6 +189,7 @@ wsl --set-default-version 2
 
 # Set up some Windows Subsystem for Android stuff.
 winget install --id=infinitepower18.WSASideloader  -e
+winget install 9N4P75DXL6FG
 
 # Office Applications #
 winget install ONLYOFFICE.DesktopEditors
