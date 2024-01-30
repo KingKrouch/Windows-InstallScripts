@@ -188,8 +188,7 @@ rm wsl_update_x64.msi
 wsl --set-default-version 2
 
 # Set up some Windows Subsystem for Android stuff.
-winget install --id=infinitepower18.WSASideloader  -e
-winget install 9N4P75DXL6FG
+winget install 9N4P75DXL6FG # WSATools, this includes an APK sideloader.
 
 # Office Applications #
 winget install ONLYOFFICE.DesktopEditors
