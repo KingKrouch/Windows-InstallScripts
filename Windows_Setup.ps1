@@ -60,6 +60,7 @@ winget install Autodesk.DesktopApp
 winget install Wacom.WacomTabletDriver
 winget install BlenderFoundation.Blender
 winget install Audacity.Audacity
+winget install Obsidian.Obsidian
 # Add Affinity Photo Here.
 choco install clipstudio-paint clipstudio-modeler -y
 
