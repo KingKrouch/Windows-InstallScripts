@@ -234,6 +234,9 @@ Set-ItemProperty -Path "HKCU:\Control Panel\Accessibility\StickyKeys" -Name "Fla
 Set-ItemProperty -Path "HKCU:\Control Panel\Accessibility\Keyboard Response" -Name "Flags" -Value "126"
 Set-ItemProperty -Path "HKCU:\Control Panel\Accessibility\ToggleKeys" -Name "Flags" -Value "58"
 
+# Disable the Search Bar Holiday Theming
+reg add "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\SearchSettings" /v "IsDynamicSearchBoxEnabled" /d 0 /t REG_DWORD /f
+
 # Show frequently used files and folders.
 Set-ItemProperty -Path $ExplorerSettingsPath -Name "Start_TrackProgs" -Value 0
 # Show file extensions for known file types.
