@@ -206,6 +206,9 @@ winget install RazerInc.RazerInstaller
 winget install ViGEm.ViGEmBus
 winget install ViGEm.HidHide
 
+# Install AntiMicroX, for keyboard > controller emulation.
+winget install AntiMicroX.antimicrox
+
 # Set up DirectPlay and some legacy components for older PC games.
 Enable-WindowsOptionalFeature -Online -FeatureName LegacyComponents -All -NoRestart
 Enable-WindowsOptionalFeature -Online -FeatureName DirectPlay -NoRestart
