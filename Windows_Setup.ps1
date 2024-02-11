@@ -257,4 +257,7 @@ Set-ItemProperty -Path $DesktopSettingsPath -Name "UserPreferencesMask" -Value (
 # Set JPEG import quality for the desktop to 100%.
 Set-ItemProperty -Path $DesktopSettingsPath -Name "JPEGImportQuality" -Value 100 -Type DWORD
 
+# Set up AFMF Interpolation for all Graphics APIs.
+Set-ItemProperty -Path "HKLM:\SOFTWARE\AMD\DVR" -Name "GFGEnableAPI" -Value 7
+
 # TODO: Add tweaks to automatically enable AutoHDR, Optimizations for Windowed Games, and Variable Refresh Rate.
