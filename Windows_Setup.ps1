@@ -3,6 +3,8 @@
 # Install Chocolatey (May need to run the "choco install" comamnds again, make sure to run this script as admin) #
 Set-ExecutionPolicy -Scope CurrentUser Unrestricted
 Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
+# Run this command as an administrator.
+Install-Module PSWindowsUpdate
 
 # Install Scoop
 iex (new-object net.webclient).downloadstring('https://get.scoop.sh')
@@ -269,6 +271,8 @@ winget install VMWare.WorkstationPlayer
 ## TODO: Figure out how to alias this to some sort of command
 winget upgrade --all
 scoop update
+## NOTE: The Windows Update Install command requires adminstrator permission to run.
+Install-WindowsUpdate
 
 ## Settings Tweaks
 # Set up registry paths.
