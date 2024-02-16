@@ -7,7 +7,11 @@ Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManage
 # Install Scoop
 iex (new-object net.webclient).downloadstring('https://get.scoop.sh')
 winget install Git.Git # Set up Git, as we will need that prior to setting up the extras scoop bucket.
+# NOTE: You need to add "scoop config gh_token <github_token>" to get working repo searching in Scoop.
+scoop config rm proxy
 scoop bucket add extras
+scoop bucket add games
+scoop bucket add nonportable
 
 # Install Fastfetch (through Scoop)
 winget install 7zip.7zip # Set up 7-Zip, as we will need that before setting up fastfetch.
@@ -20,6 +24,11 @@ winget install ItchIo.Itch
 winget install PrismLauncher.PrismLauncher
 winget install ElectronicArts.EADesktop
 winget install Ubisoft.Connect
+# Gaming Stuff
+winget install ModOrganizer2.modorganizer
+scoop install livesplit
+scoop install betterjoy
+## TODO: Figure out the problem with this "scoop install dshidmini-np".
 # UWPHook for adding Microsoft Store stuff to Steam
 winget install brianlima.uwphook
 # Special K (Swiss Army Knife for PC Gaming)
@@ -27,9 +36,23 @@ winget install SpecialK.SpecialK
 # Streaming Client for Games
 winget install LizardByte.Sunshine
 winget install MoonlightGameStreamingProject.Moonlight
+# Emulators
+scoop install cemu-dev
+scoop install cxbx-reloaded
+scoop install dolphin-beta
+scoop install dosbox-x
+scoop install duckstation
+scoop install flycast
+scoop install pcsx2-dev
+scoop install rpcs3
+scoop install ryujinx-ava
+## TODO: Figure out why "scoop install xemu" won't work.
+scoop install xenia
+scoop install xenia-canary
 
 # Web and Multimedia #
-winget install Librewolf.Librewolf
+winget install Vivaldi.Vivaldi
+winget install TorProject.TorBrowser
 winget install Discord.Discord
 winget install Spotify.Spotify
 winget install MullvadVPN.MullvadVPN
@@ -63,6 +86,7 @@ winget install Wacom.WacomTabletDriver
 winget install BlenderFoundation.Blender
 winget install Audacity.Audacity
 winget install Obsidian.Obsidian
+scoop install waifu2x-extension-gui
 # Add Affinity Photo Here.
 choco install clipstudio-paint clipstudio-modeler -y
 
@@ -81,6 +105,12 @@ winget install Rainmeter.Rainmeter
 winget install Sandboxie.Plus
 scoop install secureuxtheme
 
+# Install Everything Search alongside Everything Toolbar and an Everything plugin for PowerToys
+winget install voidtools.Everything stnkl.EverythingToolbar lin-ycv.EverythingPowerToys
+
+# Install Syncthing with some goodies
+winget install Syncthing.Syncthing Martchus.syncthingtray Martchus.syncthingctl
+
 # File Software #
 winget install RARLab.WinRAR
 winget install AntibodySoftware.WizTree
@@ -93,6 +123,18 @@ winget install LIGHTNINGUK.ImgBurn
 # System Software #
 winget install Henry++.MemReduct
 winget install BleachBit.BleachBit
+scoop install cru
+scoop install ddu
+scoop install ryzenadj
+scoop install ventoy
+# TODO: Figure out why "scoop install compactgui" won't work
+scoop install virtualhere-client
+scoop install virtualhere-server
+scoop install explorerplusplus
+
+# Cosmetic Stuff (Fun Stuff)
+scoop install retrobar
+scoop install shaderglass
 
 # Redistributables #
 winget install Microsoft.VCRedist.2005.x86
@@ -144,6 +186,11 @@ winget install Telerik.Fiddler.Classic
 winget install VirtualHere.USBClient
 winget install VirtualHere.USBServer
 choco install ghidra -y
+
+# Modding Tools
+scoop install dnspyex
+scoop install cheat-engine
+scoop install assetstudio
 
 # Create shortcut for Godot (Mono)
 ## Specify the directory path where you want to search
@@ -219,8 +266,9 @@ Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Hyper-V -All -NoRes
 winget install VMWare.WorkstationPlayer
 
 # Finally update everything to be double sure. #
+## TODO: Figure out how to alias this to some sort of command
 winget upgrade --all
-
+scoop update
 
 ## Settings Tweaks
 # Set up registry paths.
