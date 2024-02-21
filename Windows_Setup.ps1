@@ -48,6 +48,8 @@ scoop install flycast
 scoop install pcsx2-dev
 scoop install rpcs3
 scoop install ryujinx-ava
+scoop install pcem
+scoop install 86box
 ## TODO: Figure out why "scoop install xemu" won't work.
 scoop install xenia
 scoop install xenia-canary
