@@ -184,6 +184,7 @@ winget install PuTTY.PuTTY
 winget install WerWolv.ImHex
 winget install MHNexus.HxD
 winget install TimKosse.FileZilla.Client
+winget install EclipseAdoptium.Temurin.21.JDK
 winget install EclipseAdoptium.Temurin.20.JDK
 winget install EclipseAdoptium.Temurin.17.JDK
 winget install MongoDB.Server
