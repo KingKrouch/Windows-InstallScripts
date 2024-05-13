@@ -50,7 +50,7 @@ scoop install rpcs3
 scoop install ryujinx-ava
 scoop install pcem
 scoop install 86box
-## TODO: Figure out why "scoop install xemu" won't work.
+scoop install xemu
 scoop install xenia
 scoop install xenia-canary
 
