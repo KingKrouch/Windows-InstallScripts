@@ -74,6 +74,7 @@ winget install qBittorrent.qBittorrent
 winget install Twilio.Authy
 winget install Bitwarden.Bitwarden
 winget install Yubico.YubikeyManager Yubico.Authenticator
+winget install agalwood.Motrix
 # Set up Spicetify
 iwr -useb https://raw.githubusercontent.com/spicetify/spicetify-cli/master/install.ps1 | iex
 iwr -useb https://raw.githubusercontent.com/spicetify/spicetify-marketplace/main/resources/install.ps1 | iex
