@@ -167,6 +167,7 @@ dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /nores
 dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart # You still need to go about installing the WSL 2 Kernel.
 winget install 9PDXGNCFSCZV # Ubuntu
 winget install 9NPCP8DRCHSN # Fedora WSL
+winget install marha.VcXsrv # For remoting into a WSL X Server.
 winget install Paragon.LinuxFileSystems # This is for EXT4 file systems. Wish WinBTRFS wasn't BSOD bait, as I'd otherwise be using those filesystems.
 winget install Docker.DockerDesktop
 winget install BaldurKarlsson.RenderDoc
