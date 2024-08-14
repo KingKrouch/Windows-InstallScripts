@@ -56,6 +56,7 @@ scoop install xenia-canary
 
 # Web and Multimedia #
 winget install Vivaldi.Vivaldi
+winget install Ablaze.Floorp
 winget install TorProject.TorBrowser
 winget install Discord.Discord
 winget install Spotify.Spotify
